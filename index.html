@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Risky and Reemar - Cyberpunk Romance</title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="assets/Audio/Best _part.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="cyberpunk-container">
+        <div class="heart-rain"></div>
+
+        <header class="header">
+            <div class="header-content">
+                <h1 class="heading glitch" data-text="Risky & Reemar">Risky & Reemar</h1>
+                <p class="heading-subtext">Seumur Hidup, Jadi Value dan Skill Sangat Penting"</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="sub-heading neon-text">Ikhtisar</h2>
+            <p>Yuk, ikutan Pernikahan kami—acara yang dijamin bikin perut kalian kaku dari ketawa! Bayangkan aja, acara ini yang glitter-nya nyala, tarian Macarena yang bikin semua orang goyang, dan makanan yang super lezat (dan mungkin bikin kalian enggak mau pulang). Dari sesi foto yang konyol sampai limusin yang super glamor, acara ini penuh dengan kejadian lucu yang bakal jadi bahan obrolan kalian.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="sub-heading neon-text">Detail Acara</h2>
+            <div class="details">
+                <i class="fas fa-calendar-check icon-neon"></i>
+                <h3 class="details-heading">Date // Time</h3>
+                <p>Feb 30, 2049 // 20:49</p>
+                <a title="Add to Calendar" rel="noopener" href="#" target="_blank" rel="nofollow" class="action-link">Sync to Calendar</a>
+            </div>
+            <div class="details">
+                <i class="fas fa-map-marked-alt icon-neon"></i>
+                <h3 class="details-heading">Lokasi // RR</h3>
+                <p><a rel="noopener" href="https://maps.app.goo.gl/JE3U1xkFgwb71uuy6" class="action-link">Resinda Hotel Karawang</a></p>
+                <img class="resort-image" src="./img/Resinda.jpeg" alt="Resinda" />
+            </div>
+            <div class="details">
+                <i class="fas fa-bullhorn icon-neon"></i>
+                <h3 class="details-heading">Memeriahkan Acara</h3>
+                <p>Remix Alan Walker x FYP TIKTOK TREND bakal mengguncang perut kalian dengan musik yang bikin semua orang goyang dan tertawa. Bukan cuma itu, ada makanan enak, minuman seru, dan bunga-bunga yang bikin acara ini makin heboh. Siapin diri kalian buat ketawa ngakak dan bersenang-senang sepanjang malam!</p>
+                <p>Bunga mawar mewangi di malam kelam,<br> Hadiah itu bisa ditinggal di rumah.<br> Bawa senyuman dan doi kalian saja,<br> Karena kebahagiaan datang dari tawa dan cinta yang penuh rasa.</p>
+            </div>
+            <div class="details">
+                <i class="fas fa-envelope icon-neon"></i>
+                <h3 class="details-heading">System Message</h3>
+                <p>Hadirin sekalian, hadiah tidak diperlukan. Cukup bawa senyum dan jangan lupa selfie dengan kami!</p>
+                <p>Minimal bawa pasangan, Maksimal bawa keluarga.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2049 Risky & Reemar - System Override Complete</p>
+        </footer>
+    </div>
+
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        function createHeart() {
+            const heart = document.createElement('i');
+            heart.classList.add('fas', 'fa-heart');
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+            document.querySelector('.heart-rain').appendChild(heart);
+
+            heart.addEventListener('animationend', () => {
+                heart.remove();
+            });
+        }
+
+        setInterval(createHeart, 100);
+
+        const audio = document.getElementById('background-music');
+        audio.volume = 0.5;
+        audio.play();
+    </script>
+</body>
+</html>
