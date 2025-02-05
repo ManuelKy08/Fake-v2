@@ -16,9 +16,9 @@
 
 
 ## Notice
-Recode dari https://github.com/ManuelKy08/fakeee
+Recode dari https://github.com/ManuelKy08/Fake
 
-Visit: https://manuelky08.github.io/fakeee
+Visit: https://manuelky08.github.io/Fake
 
 Hasil Recode
-Visit: https://manuelky08.github.io/fakeee-v2
+Visit: https://manuelky08.github.io/Fake-v2
